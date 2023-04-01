@@ -18,21 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: 狐狸的AI技术笔记
+email: sexyfoxtech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  收集有用的AI技术，分享有趣的AI应用，记录AI学习历程。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: ArkarNZ
+github_username:  xmany
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+domain: foxai.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: ""            # the subpath of your site, e.g. /blog
 
 # Exclude from processing.
 # The following items will not be processed, by default.
