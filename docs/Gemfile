@@ -35,4 +35,9 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
+# Jekyll requires the webrick gem for serving your site locally.
+# Starting with Ruby 3.0, webrick is no longer included in the standard library by default.
 gem "webrick"
+
+# To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+gem 'faraday-retry'
