@@ -104,4 +104,40 @@ bundle exec jekyll serve
 
     While learning Ruby can give you a deeper understanding of Jekyll's inner workings and allow you to create custom plugins, it's not necessary for most users to build and manage a Jekyll-based site. By focusing on the aspects mentioned above, you can effectively create, customize, and maintain your Jekyll site without having to learn Ruby.
 
-2. 
+2. What's the difference when running locally `jekyll serve` vs `bundle exec jekyll serve` ?
+
+    When you run `jekyll serve` and `bundle exec jekyll serve`, you might get different results due to differences in the environment and gem versions being used. Here's an explanation of the two commands:
+
+    `jekyll serve`: This command runs the Jekyll site using the global installation of Jekyll and its dependencies on your system. It uses the versions of Jekyll and other gems installed in your global Ruby environment. If you have multiple versions of Jekyll or its dependencies installed globally, this command might not use the exact versions specified in your Gemfile.lock.
+
+    `bundle exec jekyll serve`: This command runs Jekyll within the context of your project's Gemfile. It ensures that the specific versions of Jekyll and its dependencies specified in your Gemfile.lock are used. This is the recommended way to run Jekyll, as it guarantees that your project runs with the same gem versions across different environments.
+
+    If you're experiencing different results when using the two commands, it's likely due to differences in the gem versions being used. To ensure consistency across different environments and setups, it's recommended to use `bundle exec jekyll serve` to run your Jekyll site locally.
+
+
+3. does every blog file must follow naming convention: `year-month-day-title.markdown` ?
+
+    While using Jekyll, it is strongly recommended to follow the naming convention year-month-day-title.markdown (or .md instead of .markdown) for your blog post files. This convention helps Jekyll to automatically recognize and parse the date and title of the blog post.
+
+    However, you can bypass this convention by providing the necessary front matter (metadata) in the file itself. If you choose not to follow the convention, you will need to provide the title and date in the front matter of your blog post file, like this:
+
+    ```
+    ---
+    layout: post
+    title: "Your Blog Post Title"
+    date: 2023-03-14
+    ---
+    ```
+
+    By providing the title and date in the front matter, Jekyll can still process the file correctly. However, following the naming convention makes it easier to manage and organize your blog posts, especially when you have a large number of posts.
+
+
+4. Differences between code snippets in jekyll and markdown
+
+    You can definitely use the standard Markdown code snippets with Jekyll using the triple backticks (```) syntax. The {% highlight %} syntax is provided by Jekyll for additional customization and functionality, like adding line numbers or using different styles.
+
+    The primary difference between the two is that the {% highlight %} syntax uses Jekyll's built-in syntax highlighting library, called Rouge, which provides more advanced features and customization options. The standard Markdown code block with triple backticks (```) will use the default syntax highlighting provided by the Markdown parser.
+
+    If you don't need the extra features provided by Rouge, you can stick to the standard Markdown code blocks using triple backticks (```). However, if you need advanced highlighting features, like line numbers, specific language support, or custom styles, you can use the {% highlight %} syntax.
+
+    For most use cases, the standard Markdown code blocks are sufficient, and you can use the triple backticks (```) syntax for code snippets in your Jekyll blog.
