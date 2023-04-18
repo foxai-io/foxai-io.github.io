@@ -8,7 +8,7 @@ main:
   - title: "Tags"
     url: /tags
 
-sitebar:
+sidebar:
   - title: Getting Started
     children:
       - title: "本站介绍"

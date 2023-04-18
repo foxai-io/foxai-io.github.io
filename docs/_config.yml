@@ -23,16 +23,15 @@ email: sexyfoxtech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   收集有用的AI技术，分享有趣的AI应用，记录AI学习历程。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
 twitter_username: ArkarNZ
 github_username:  xmany
 
 domain: foxai.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: ""            # the subpath of your site, e.g. /blog
 
 # Theme settings
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 minimal_mistakes_skin: contrast
 
@@ -43,13 +42,13 @@ defaults:
       type: "pages"
     values:
       sidebar:
-        nav: "sitebar"
+        nav: "sidebar"
   - scope:
       path: ""
       type: "posts"
     values:
       sidebar:
-        nav: "sitebar"
+        nav: "sidebar"
 
 # Tags and categories
 category_archive_path: "categories"
@@ -61,6 +60,7 @@ plugins:
 paginate: 10
 paginate_path: "/page:num/"
 
+# Feed settings
 plugins:
   - jekyll-feed
 
