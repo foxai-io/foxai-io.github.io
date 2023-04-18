@@ -27,14 +27,46 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ArkarNZ
 github_username:  xmany
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
 domain: foxai.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: ""            # the subpath of your site, e.g. /blog
+
+# Build settings
+# theme: minima
+theme: minimal-mistakes-jekyll
+
+minimal_mistakes_skin: contrast
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      sidebar:
+        nav: "sitebar"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sidebar:
+        nav: "sitebar"
+
+# Tags and categories
+category_archive_path: "categories"
+tag_archive_path: "tags"
+
+plugins:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-feed
+
+# enable search
+search: true
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

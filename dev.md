@@ -141,3 +141,62 @@ bundle exec jekyll serve
     If you don't need the extra features provided by Rouge, you can stick to the standard Markdown code blocks using triple backticks (```). However, if you need advanced highlighting features, like line numbers, specific language support, or custom styles, you can use the {% highlight %} syntax.
 
     For most use cases, the standard Markdown code blocks are sufficient, and you can use the triple backticks (```) syntax for code snippets in your Jekyll blog.
+
+5. does `Minimal Mistakes theme` supports navigating through tags and categories?
+   
+    Yes, the Minimal Mistakes theme supports navigating through tags and categories. You can create tag and category archive pages that display a list of posts with the corresponding tag or category.
+
+    To create tag and category archive pages, follow these steps:
+
+    1. In your Jekyll site's root directory, create two new folders: `_pages` (if it doesn't already exist) and _data.
+
+    2. Inside the _data folder, create a file called navigation.yml. This file will define your site's navigation menu. Add the following content to create menu items for the tag and category archives:
+
+        ```yaml
+        main:
+        - title: "Categories"
+        url: /categories/
+        - title: "Tags"
+        url: /tags/
+        ```
+
+    3. Inside the `_pages` folder, create two new files: `categories.md` and `tags.md`
+
+    4. Add the following content to the `categories.md` file:
+
+        ```
+        ---
+        title: Categories
+        layout: archive-taxonomies # categories
+        type: categories
+        # permalink: /categories/
+        menu:
+            main:
+                weight: 4
+        ---
+        ```
+
+    5. Add the following content to the `tags.md` file:
+
+        ```
+        ---
+        title: Tags
+        layout: archive-taxonomies # tags
+        type: tags
+        # permalink: /tags/
+        menu:
+            main:
+                weight: 3
+        ---
+        ```
+
+    6. In your site's `_config.yml` file, make sure you have the following lines:
+
+        ```
+        # Tags and categories
+        category_archive_path: "categories"
+        tag_archive_path: "tags"
+        ```
+
+    7. Save your changes and restart your Jekyll server using `bundle exec jekyll serve`. You should now have navigation menu items for tags and categories, and clicking on them will take you to the corresponding archive pages.
+
