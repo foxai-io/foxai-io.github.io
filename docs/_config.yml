@@ -31,12 +31,12 @@ domain: foxai.io       # if you want to force HTTPS, specify the domain without 
 url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: ""            # the subpath of your site, e.g. /blog
 
-# Build settings
-# theme: minima
+# Theme settings
 theme: minimal-mistakes-jekyll
 
 minimal_mistakes_skin: contrast
 
+# Navigation settings
 defaults:
   - scope:
       path: ""
