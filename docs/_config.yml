@@ -57,13 +57,10 @@ tag_archive_path: "tags"
 plugins:
   - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-feed
 
 paginate: 10
 paginate_path: "/page:num/"
-
-# Feed settings
-plugins:
-  - jekyll-feed
 
 # enable search
 search: true
