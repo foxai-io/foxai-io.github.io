@@ -56,6 +56,7 @@ tag_archive_path: "tags"
 
 plugins:
   - jekyll-paginate
+  - jekyll-include-cache
 
 paginate: 10
 paginate_path: "/page:num/"
