@@ -4,13 +4,17 @@ title:  "本站介绍"
 date:   2023-04-17 05:07:09 +1300
 categories: 本站介绍
 tags: 日记 本站介绍
-permalink: blog/2023/04/first-blog
+permalink: /本站介绍
 author: Jimmy狐狸
+header:
+  teaser: /assets/images/midjourney/midjourney-04-19-panda-1232x928.png
 ---
 
 大家好！
 
 欢迎来到我们的FoxAI站点！很高兴您能加入这个社区。本站致力于为中文用户提供最新、最全面的AI相关资讯和资源。
+
+[站点GitHub Repo](https://github.com/foxai-io/foxai-io.github.io)
 
 在这里，我们将分享AI领域的研究进展、技术教程、产业动态和实际应用案例。我们希望通过这个平台，帮助您更好地理解并掌握人工智能的知识，从而在这个迅速发展的领域取得成功。
 

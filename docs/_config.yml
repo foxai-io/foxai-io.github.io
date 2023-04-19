@@ -19,13 +19,17 @@
 # in the templates via {{ site.myvariable }}.
 
 title: 狐狸的AI技术笔记
+subtitle: foxai.io
+name: 狐狸Jimmy
 email: sexyfoxtech@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   收集有用的AI技术，分享有趣的AI应用，记录AI学习历程。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://foxai.io  # the base hostname and protocol for your site, e.g. http://example.com
+repository: "foxai-io/foxai-io.github.io"
 twitter_username: ArkarNZ
 github_username:  xmany
+logo: /assets/images/foxlogo88.png
 
 domain: foxai.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 
@@ -33,7 +37,17 @@ domain: foxai.io       # if you want to force HTTPS, specify the domain without 
 # theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
 
-minimal_mistakes_skin: contrast
+minimal_mistakes_skin: dark
+
+teaser: /assets/images/midjourney/midjourney-04-19-panda-1232x928.png
+
+site.locale: zh
+
+# Disable for now, because I can't fix the below issue
+# breadcrumbs: true
+
+# Will yield a breadcrumb like "Home / %e6%9c%ac%e7%ab%99%e4%bb%8b%e7%bb%8d / 本站介绍"
+# permalink: /:categories/:title/
 
 # Navigation settings
 defaults:
@@ -47,8 +61,28 @@ defaults:
       path: ""
       type: "posts"
     values:
+      show_date: true
       sidebar:
         nav: "sidebar"
+      # comments: true   # enable comments for all posts, later because discourse instance requires local docker server
+
+# enable comments for all posts, later because discourse instance requires local docker server
+# comments:
+#   provider: "discourse"
+#   discourse:
+#     server: # meta.discourse.org
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/arkarnz"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/foxai-io/foxai-io.github.io"
+    - label: "Discord"
+      icon: "fab fa-discord"
+      url: "https://discord.gg/Ryk5PuSTdp"
 
 # Tags and categories
 category_archive_path: "categories"
