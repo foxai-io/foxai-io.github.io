@@ -4,7 +4,7 @@ title:  "本站介绍"
 date:   2023-04-17 05:07:09 +1300
 categories: 本站介绍
 tags: 日记 本站介绍
-permalink: /本站介绍
+permalink: /site-introduction
 author: Jimmy狐狸
 header:
   teaser: /assets/images/midjourney/midjourney-04-19-panda-1232x928.png

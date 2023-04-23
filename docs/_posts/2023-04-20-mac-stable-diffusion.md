@@ -4,7 +4,7 @@ title:  "Mac 本地运行 stable diffusion"
 date:   2023-04-20 23:07:09 +1300
 categories: 教程Tutorial
 tags: [学习记录, Stable Diffusion, Mac, CoreML, Apple Silicon]
-permalink: /在Mac上搭建StableDiffusion
+permalink: /run-sd-locally-mac
 author: Jimmy狐狸
 header:
   teaser: /assets/images/midjourney/midjourney-04-19-panda-1232x928.png

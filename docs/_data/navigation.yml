@@ -2,7 +2,7 @@ main:
   - title: "Home"
     url: /
   - title: "About"
-    url: /about
+    url: /site-introduction
   - title: "Categories"
     url: /categories
   - title: "Tags"
@@ -12,4 +12,4 @@ sidebar:
   - title: Getting Started
     children:
       - title: "本站介绍"
-        url: blog/2023/04/first-blog
+        url: site-introduction
