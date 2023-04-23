@@ -1,6 +1,6 @@
 # FoxAI
 
-[![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40Jimmy狐狸&style=social&url=https%3A%2F%2Ftwitter.com%2Farkarnz)](https://twitter.com/learnprompting)
+[![Twitter](https://img.shields.io/twitter/url?label=Follow%20%40Jimmy狐狸&style=social&url=https%3A%2F%2Ftwitter.com%2Farkarnz)](https://twitter.com/arkarnz)
 ![Website](https://img.shields.io/website?down_message=offline%20%3A%28&up_message=foxai.io&url=https%3A%2F%2Ffoxai.io)
 
 
