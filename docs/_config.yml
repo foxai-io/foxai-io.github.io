@@ -30,6 +30,8 @@ repository: "foxai-io/foxai-io.github.io"
 twitter_username: ArkarNZ
 github_username:  xmany
 logo: /assets/images/foxlogo88.png
+twitter:
+  username: "ArkarNZ"
 
 domain: foxai.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 
@@ -93,6 +95,7 @@ plugins:
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-feed
+  - jekyll-seo-tag
 
 paginate: 10
 paginate_path: "/page:num/"
@@ -100,7 +103,7 @@ paginate_path: "/page:num/"
 # enable search
 search: true
 
-
+google_site_verification: google-site-verification=fmdRhrauAjqvzE4U7mmQa0UJq4hamUS3eWZ-b8rgJnA
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
