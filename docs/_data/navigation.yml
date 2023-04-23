@@ -1,12 +1,12 @@
 main:
   - title: "Home"
     url: /
-  - title: "About"
-    url: /site-introduction
   - title: "Categories"
     url: /categories
   - title: "Tags"
     url: /tags
+  - title: "GitHub"
+    url: https://github.com/foxai-io/foxai-io.github.io
 
 sidebar:
   - title: Getting Started
