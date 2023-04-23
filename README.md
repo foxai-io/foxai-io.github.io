@@ -53,6 +53,7 @@ tags: 日记 本站介绍
 一些 `tags` 的例子：
 
 - **日记**
+- **学习记录**
 - **本站介绍**
 - **Stable Diffusion**
 - **ChatGPT**

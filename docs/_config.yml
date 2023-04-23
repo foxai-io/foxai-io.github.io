@@ -84,6 +84,7 @@ footer:
       icon: "fab fa-discord"
       url: "https://discord.gg/Ryk5PuSTdp"
 
+
 # Tags and categories
 category_archive_path: "categories"
 tag_archive_path: "tags"
