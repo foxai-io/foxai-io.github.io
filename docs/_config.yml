@@ -64,6 +64,7 @@ defaults:
       type: "posts"
     values:
       show_date: true
+      comments: true
       sidebar:
         nav: "sidebar"
       # comments: true   # enable comments for all posts, later because discourse instance requires local docker server
@@ -103,7 +104,15 @@ paginate_path: "/page:num/"
 # enable search
 search: true
 
+# google search console
 google_site_verification: google-site-verification=fmdRhrauAjqvzE4U7mmQa0UJq4hamUS3eWZ-b8rgJnA
+
+# enable comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "foxai"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
